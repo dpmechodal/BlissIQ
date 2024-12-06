@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: #F5F5F9;
+}
+
+a {
+  text-decoration: none;
+}
