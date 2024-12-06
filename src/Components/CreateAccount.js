@@ -6,7 +6,6 @@ const Signin = () => {
   return (
     <div>
       <div className='container'>
-        <h1>MD</h1>
       </div>
     </div>
   )

@@ -8,10 +8,316 @@
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
-  background-color: #F5F5F9;
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFF;
 }
 
 a {
   text-decoration: none;
 }
+.navbar{
+  padding: 15px;
+  background: #FFF;
+  box-shadow: 0px 188px 53px 0px rgba(236, 229, 255, 0.00), 0px 121px 48px 0px rgba(236, 229, 255, 0.01), 0px 68px 41px 0px rgba(236, 229, 255, 0.05), 0px 30px 30px 0px rgba(236, 229, 255, 0.09), 0px 8px 17px 0px rgba(236, 229, 255, 0.10);
+}
+.icon-search .fa.fa-search {
+  color: #4c5f71;
+  display: block;
+  font-size: 16px;
+  height: 46px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  width: 3.375rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0C2C44;
+}
+.icon-search .form-control {
+  border-radius: 32px;
+  padding: 10px 25px 10px 2.8rem;
+  border-radius: 33px;
+  border: 1px solid rgba(12, 44, 68, 0.05);
+  color: #424242;
+  background: #FFF;
+  box-shadow: 0px 13px 4px 0px rgba(201, 201, 201, 0.00), 0px 8px 3px 0px rgba(201, 201, 201, 0.01), 0px 5px 3px 0px rgba(201, 201, 201, 0.05), 0px 2px 2px 0px rgba(201, 201, 201, 0.09), 0px 1px 1px 0px rgba(201, 201, 201, 0.10);
+}
+.btn.btn-user{
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.btn.btn-user img{
+  border-radius: 36px;
+  border: 2px solid #C2E0FF;
+  width: 100%;
+  max-width: 36px;
+  height: 36px;
+}
+.header-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-search{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.notification-user{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.notification a{
+  color: #0C2C44;
+  font-size: 20px;
+}
+.py-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.px-150{
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.email-login-text{
+  padding-left: 45px;
+}
+.get-start{
+  background: url(../src/images/login-bg.svg);
+  padding: 140px 60px 90px 60px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 45px;
+  box-shadow: 0px 165px 46px 0px rgba(153, 153, 153, 0.00), 0px 105px 42px 0px rgba(153, 153, 153, 0.01), 0px 59px 36px 0px rgba(153, 153, 153, 0.05), 0px 26px 26px 0px rgba(153, 153, 153, 0.09), 0px 7px 14px 0px rgba(153, 153, 153, 0.10);
+}
+.email-login-text{
+  text-align: center;
+}
+.email-login-text h1{
+  color: #0C2C44;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.email-login-text p{
+  color: #424242;
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.btn:focus{
+  box-shadow: none;
+}
+.btn.btn-c-email{
+  border-radius: 8px;
+  border: 1px solid #FFC445;
+  background: #FED06E;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px;
+  justify-content: center;
+  color: #0A2D67;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn.btn-c-google{
+  border-radius: 8px;
+  border: 1px solid #FFC445;
+  background: #FFFCF4;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 15px;
+  justify-content: center;
+  color: #0A2D67;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn.btn-c-google:hover{
+  border: 1px solid #FFC445;
+  background: #FED06E;
+  color: #0A2D67;
+}
+.btn.btn-c-email:hover{
+  border: 1px solid #FFC445;
+  background: #FFFCF4;
+  color: #0A2D67;
+}
+.dont-account p{
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: #424242;
+  font-size: 20px;
+  font-weight: 400;
+}
+.dont-account p a{
+  color: #0C2C44;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dont-account p a:hover{
+  color: #FFC445;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #000;
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+.login-form{
+  text-align: start;
+}
+.forgot{
+  text-align: end;
+}
+.form-control:focus,
+.form-select:focus{
+  box-shadow: none;
+}
+.login-form label.form-label{
+  color: #0C2C44;
+  font-size: 14px;
+  font-weight: 700;
+}
+.login-form input.form-control{
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  background:#FFF;
+  padding: 16px;
+  color: #424242;
+  font-size: 16px;
+  font-weight: 400;
+}
+.forgot a{
+  color: #0C2C44;
+  font-size: 16px;
+  font-weight: 400;
+}
+.forgot a:hover{
+  color: #FFC445;
+}
+.check-mail{
+  border-radius: 10px;
+  background: rgba(194, 224, 255, 0.20);
+  box-shadow: 0px 165px 46px 0px rgba(153, 153, 153, 0.00), 0px 105px 42px 0px rgba(153, 153, 153, 0.01), 0px 59px 36px 0px rgba(153, 153, 153, 0.05), 0px 26px 26px 0px rgba(153, 153, 153, 0.09), 0px 7px 14px 0px rgba(153, 153, 153, 0.10);
+  padding: 100px 170px 60px 170px;
+}
+.mail-icon{
+  font-size: 50px;
+  color: #FFF;
+  border-radius: 20px;
+  background: #0C2C44;
+  width: 100%;
+  max-width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: -160px;
+  margin-bottom: 25px;
+}
+.check-mail{
+  text-align: center;
+}
+.check-mail h1{
+  color: #0C2C44;
+  font-size: 40px;
+  font-weight: 700;
+}
+.check-mail p{
+  color: #424242;
+  font-size: 16px;
+  margin-bottom: 38px;
+  font-weight: 400;
+}
+.bg-check-mail{
+  height: 100%;
+  background-color: red;
+  margin: auto;
+}
+.my-100{
+  margin-top: 100px;
+}
+
+
+
+/* media  */
+
+/* 1680 */
+@media (max-width: 1700px) {
+
+}
+
+/* 1500 */
+@media (max-width: 1679px) {
+
+}
+
+/* 1440 */
+@media (max-width: 1499px) {
+
+}
+
+/* 1280 */
+@media (max-width: 1439px) {
+
+}
+
+/* 1025 */
+@media (max-width: 1279px) {
+
+}
+
+/* 992 */
+@media (max-width: 1024px) {
+
+}
+
+/* 768 */
+@media (max-width: 991px) {
+
+}
+
+/* 576 */
+@media (max-width: 767px) {
+
+}
+
+/* 525 */
+@media (max-width: 575px) {
+
+}
+
+/* 480 */
+@media (max-width: 524px) {
+
+}
+
+/* 425 */
+@media (max-width: 479px) {
+
+}
+
+/* 375 */
+@media (max-width: 424px) {
+
+}
+
+/* 320 */
+@media (max-width: 374px) {
+
+}
+
+/* 280 */
+@media (max-width: 319px) {
+
+}
+
