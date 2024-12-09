@@ -1,0 +1,49 @@
+.home-pills .nav-tabs {
+  --bs-nav-tabs-border-width: 1px;
+  --bs-nav-tabs-border-color: #dee2e6;
+  --bs-nav-tabs-border-radius: 0.375rem;
+  --bs-nav-tabs-link-hover-border-color: #e9ecef #e9ecef #dee2e6;
+  --bs-nav-tabs-link-active-color: #495057;
+  --bs-nav-tabs-link-active-bg: #fff;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
+  border-bottom: 0;
+  justify-content: center;
+  gap: 10px;
+}
+
+.home-pills .nav-tabs .nav-item.show .nav-link,
+.home-pills .nav-tabs .nav-link.active {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--card, #c2e0ff);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.home-pills .nav-tabs .nav-link:focus,
+.home-pills .nav-tabs .nav-link:hover {
+  isolation: isolate;
+  border-radius: 7px;
+}
+
+.home-img-one {
+  text-align: start;
+  margin-top: 5px;
+}
+.home-img-one img {
+  height: 80px;
+}
+.home-pills .nav-link p {
+  margin: 0;
+  color: #0c2c44;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+.home-pills .nav-link {
+  display: block;
+  padding: 20px 20px;
+  height: 175px;
+  width: 165px;
+  text-align: start;
+}
