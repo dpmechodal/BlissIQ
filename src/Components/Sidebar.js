@@ -10,7 +10,7 @@ const Sidebar = () => {
         <li>
           <Link
             to="/home"
-            className={location.pathname === "/home" ? "active" : ""}
+            className={location.pathname === "/Home" ? "active" : ""}
           >
             <i className="fa fa-home"></i> Home
           </Link>
@@ -57,8 +57,8 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/profile"
-            className={location.pathname === "/profile" ? "active" : ""}
+            to="/StudentProfile"
+            className={location.pathname === "/StudentProfile" ? "active" : ""}
           >
             <i className="fa-solid fa-user"></i> Profile
           </Link>

@@ -12,6 +12,7 @@ import Avatar from "./Components/SignUpPage/Avatar";
 import EditProfile from "./Components/SignUpPage/EditProfile";
 import VerifyEmail from "./Components/SignUpPage/VerifyEmail";
 import Home from "./Components/DashboardPages/Home";
+import StudentProfile from "./Components/StudentProfilePages/StudentProfile";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/EditProfile" element={<EditProfile />} />
           <Route path="/VerifyEmail" element={<VerifyEmail />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/StudentProfile" element={<StudentProfile/>} />
         </Routes>
       </Router>
     </div>

@@ -29,6 +29,7 @@ a {
     0px 8px 17px 0px rgba(236, 229, 255, 0.1);
   position: sticky;
   top: 0;
+  z-index: 9;
 }
 .icon-search .fa.fa-search {
   color: #4c5f71;
