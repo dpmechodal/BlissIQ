@@ -4,18 +4,17 @@ import Sidebar from "../Sidebar";
 import "./StudentProfilePages.css";
 import { Link } from "react-router-dom";
 import Student_one from "../../images/StudentProfile/Student-one.svg";
-import emoji_crown from "../../images/StudentProfile/emoji-crown.svg";
-import mdi_tick from "../../images/StudentProfile/mdi_tick.svg";
+import Alphabets_img from "../../images/StudentProfile/Alphabets-img.svg";
 import CustomizedProgressBars from "./Progress";
 
-function StudentProfile() {
+function StudentCourse() {
   return (
     <>
       <Navbar />
       <Sidebar />
       <div className="asside">
         <div className="container-fluid px-0">
-          <div className="row">
+          <div className="row ">
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
@@ -32,88 +31,7 @@ function StudentProfile() {
                 </div>
               </div>
             </div>
-            <div className="col-6">
-              <div className="student-main">
-                <div className="student-img">
-                  <img src={Student_one} className="img-fluid" alt="" />
-                </div>
-                <div className="student-name">
-                  <h4>Aftab Qureshi </h4>
-                  <div className="points-crown">
-                    <p>400 Points</p>
-                    <div>
-                      <img src={emoji_crown} className="img-fluid" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="student-school-main">
-                <div className="student-school">
-                  <h5>
-                    School : <span>St. Andrews High School</span>
-                  </h5>
-                  <h5>
-                    Class: <span>1st standard </span>
-                  </h5>
-                </div>
-              </div>
-              <div className="points-main">
-                <div className="points-earned">
-                  <h4>Points earned</h4>
-                  <h3>
-                    124 <span>Points</span>
-                  </h3>
-                </div>
-                <div className="points-earned">
-                  <h4>
-                    Time Spent <span>(in Minutes)</span>
-                  </h4>
-                  <h3>124</h3>
-                </div>
-                <div className="points-earned">
-                  <h4>
-                    Attendance <span>(weekly)</span>
-                  </h4>
-                  <h3>124</h3>
-                </div>
-              </div>
 
-              <div>
-                <div className="live-main-audio">
-                  <div className="live-sessions">
-                    <div className="audio-player">
-                      <i class="fa-solid fa-play"></i>
-                    </div>
-                    <h3>Live sessions </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>08</span>
-                  </div>
-                </div>
-                <div className="live-main-audio">
-                  <div className="live-sessions course-text">
-                    <div className="audio-player course">
-                      <img src={mdi_tick} className="img-fluid" alt="" />
-                    </div>
-                    <h3>Course completed </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>24</span>
-                  </div>
-                </div>
-                <div className="live-main-audio">
-                  <div className="live-sessions rank-section ">
-                    <div className="audio-player rank">
-                      <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3>Student Rank </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>08</span>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="col-6">
               <div>
                 <div className="s-pills s-main-tab">
@@ -423,6 +341,86 @@ function StudentProfile() {
                 </div>
               </div>
             </div>
+            <div className="col-6 ">
+              <div className="Course-bg">
+                <div className="student-course-main">
+                  <div className="course-student-img">
+                    <img src={Student_one} className="img-fluid" alt="" />
+                  </div>
+                  <div className="student-course-heading">
+                    <h4>design & Illustration </h4>
+                    <h3>Date : 05 September 2024</h3>
+                    <p>Total Scorer : 500/ 500 </p>
+                  </div>
+                </div>
+                <div className="Alphabets-center">
+                  <div className="Alphabets-text">
+                    <h3>
+                      Alphabets <span>Lesson no: 01</span>
+                    </h3>
+                  </div>
+                  <div className="Alphabets-main">
+                    <div className="Alphabets_img">
+                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                    </div>
+                    <div className="Alphabets-text">
+                      <p>
+                        Torem ipsum dolor sit amet, consectetur adipiscing
+                        elit.Torem ipsum dolor sit{" "}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="course-bar">
+                    <CustomizedProgressBars />
+                    <p>50%</p>
+                  </div>
+                </div>
+                <div className="Alphabets-center">
+                  <div className="Alphabets-text">
+                    <h3>
+                      Phonetics <span>Lesson no: 01</span>
+                    </h3>
+                  </div>
+                  <div className="Alphabets-main">
+                    <div className="Alphabets_img">
+                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                    </div>
+                    <div className="Alphabets-text">
+                      <p>
+                        Torem ipsum dolor sit amet, consectetur adipiscing
+                        elit.Torem ipsum dolor sit{" "}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="course-bar">
+                    <CustomizedProgressBars />
+                    <p>50%</p>
+                  </div>
+                </div>
+                <div className="Alphabets-center">
+                  <div className="Alphabets-text">
+                    <h3>
+                      Numbers <span>Lesson no: 01</span>
+                    </h3>
+                  </div>
+                  <div className="Alphabets-main">
+                    <div className="Alphabets_img">
+                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                    </div>
+                    <div className="Alphabets-text">
+                      <p>
+                        Torem ipsum dolor sit amet, consectetur adipiscing
+                        elit.Torem ipsum dolor sit{" "}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="course-bar">
+                    <CustomizedProgressBars />
+                    <p>50%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -430,4 +428,4 @@ function StudentProfile() {
   );
 }
 
-export default StudentProfile;
+export default StudentCourse;

@@ -13,6 +13,8 @@ import EditProfile from "./Components/SignUpPage/EditProfile";
 import VerifyEmail from "./Components/SignUpPage/VerifyEmail";
 import Home from "./Components/DashboardPages/Home";
 import StudentProfile from "./Components/StudentProfilePages/StudentProfile";
+import StudentCourse from "./Components/StudentProfilePages/StudentCourse";
+import StudentAttended from "./Components/StudentProfilePages/StudentAttended";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="/VerifyEmail" element={<VerifyEmail />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/StudentProfile" element={<StudentProfile/>} />
+          <Route path="/StudentAttended" element={<StudentAttended />} />
+          <Route path="/StudentCourse" element={<StudentCourse />} />
         </Routes>
       </Router>
     </div>

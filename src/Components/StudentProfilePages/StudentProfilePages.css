@@ -33,6 +33,8 @@
   height: 150px;
   width: 150px;
   margin-top: -50px;
+  border: 4px solid #C2E0FF;
+  border-radius: 50%;
 }
 .points-crown p {
   color: #0c2c44;
@@ -91,25 +93,25 @@
 
 .points-earned h4 {
   color: var(--text, #0c2c44);
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .points-earned h4 span {
   color: var(--text, #0c2c44);
-  font-size: 8px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: lowercase;
 }
 .points-earned h3 {
   color: var(--text, #0c2c44);
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 400;
   margin: 0;
 }
 .points-earned h3 span {
   color: var(--text, #0c2c44);
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 400;
 }
 .points-earned {
@@ -203,14 +205,14 @@
 .s-main-tab .nav-tabs {
   border: none;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   align-items: start;
 }
 .s-main-tab .nav-tabs button.nav-link {
   border-radius: 10px;
   background: #fff;
-  padding: 15px;
+  padding: 0 0 10px 0;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -222,7 +224,7 @@
   font-weight: 400;
 }
 .s-main-tab nav {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .s-pills .nav-tabs .nav-item.show .nav-link,
@@ -241,4 +243,202 @@
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
   background: none;
   border-color: #fff;
+}
+
+/* ------------------------------------------------------------------- */
+
+.date-student img {
+  height: 120px;
+  width: 120px;
+  border: 4px solid #c2e0ff;
+  border-radius: 100%;
+}
+
+.student-time h3 {
+  color: #0c2c44;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.student-time p {
+  color: #424242;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: -22px;
+}
+
+.student-time-main {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #ebeafa;
+  padding: 20px 25px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.scorer {
+  margin-top: 26px;
+}
+.student-time h4 {
+  color: #fcb535;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.premium-classes {
+  border-radius: 24px;
+  border: 1px solid #ebeafa;
+  background: var(--cards, #c2e0ff);
+}
+
+.css-1dsocjv-MuiLinearProgress-root.MuiLinearProgress-colorPrimary {
+  background-color: #c2e0ff !important;
+}
+
+.css-1dsocjv-MuiLinearProgress-root .MuiLinearProgress-bar {
+  border-radius: 5px;
+  background-color: #0c9038 !important;
+}
+.premium-classes
+  .css-1dsocjv-MuiLinearProgress-root.MuiLinearProgress-colorPrimary {
+  background-color: #fff !important;
+}
+.left-right-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.left-right-main i {
+  font-size: 20px;
+}
+.left-right-main span {
+  color: #0c2c44;
+  font-size: 19px;
+  font-weight: 700;
+}
+/* ----------------------------------------Course--------------------------------------------- */
+
+.Course-bg {
+  background-image: url("../../images/StudentProfile/Course-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 60px 0;
+}
+
+.course-student-img img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #c2e0ff;
+  border-radius: 100%;
+}
+
+.student-course-heading h4 {
+  color: #0c2c44;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.student-course-heading h3 {
+  color: #424242;
+  font-size: 18px;
+  font-weight: 400;
+}
+.student-course-heading p {
+  color: #0c2c44;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.student-course-main {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  border: 1px solid #ebeafa;
+  background: #c2e0ff;
+  padding: 22px 47px 21px 47px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.Alphabets-text h3 {
+  color: #0c2c44;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.Alphabets-text h3 span {
+  color: #424242;
+  font-size: 14px;
+  font-weight: 700;
+  opacity: 0.3;
+  text-transform: lowercase;
+}
+
+.Alphabets_img img {
+  width: 200px;
+}
+
+.Alphabets-text p {
+  color: #0c2c44;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.Alphabets-main {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0 5px 0;
+}
+
+.Alphabets-center {
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 19px 25px;
+  background: #fff;
+  margin: 0 72px;
+  margin-bottom: 20px;
+}
+
+.course-bar {
+  margin-top: -19px;
+}
+.course-bar p {
+  color: #404040;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.student-time h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text, #0c2c44);
+}
+.Attended-main {
+  border-radius: 24px;
+  border: 1px solid #ebeafa;
+
+  background: var(--cards, #c2e0ff);
+}
+
+.Absent-main {
+  border-radius: 24px;
+  border: 1px solid #ebeafa;
+
+  background: var(--small-text, rgba(66, 66, 66, 0.3));
+  opacity: 0.4;
 }

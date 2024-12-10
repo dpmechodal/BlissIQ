@@ -9,7 +9,7 @@ const Sidebar = () => {
       <ul className="sidebar-menu">
         <li>
           <Link
-            to="/home"
+            to="/Home"
             className={location.pathname === "/Home" ? "active" : ""}
           >
             <i className="fa fa-home"></i> Home

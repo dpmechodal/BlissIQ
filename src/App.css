@@ -29,7 +29,7 @@ a {
     0px 8px 17px 0px rgba(236, 229, 255, 0.1);
   position: sticky;
   top: 0;
-  z-index: 9;
+  z-index: 999;
 }
 .icon-search .fa.fa-search {
   color: #4c5f71;
@@ -290,6 +290,7 @@ a {
   border-bottom: 3px solid rgba(66, 66, 66, 0.3);
   background: #fff;
   scrollbar-width: none;
+  padding: 20px 0;
 }
 .asside{
   margin-top: 30px;
@@ -304,7 +305,7 @@ a {
 }
 
 .sidebar-menu li {
-  margin: 5px 0;
+  margin-bottom: 20px;
 }
 
 .sidebar-menu li a {

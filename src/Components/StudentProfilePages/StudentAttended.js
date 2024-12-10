@@ -7,8 +7,9 @@ import Student_one from "../../images/StudentProfile/Student-one.svg";
 import emoji_crown from "../../images/StudentProfile/emoji-crown.svg";
 import mdi_tick from "../../images/StudentProfile/mdi_tick.svg";
 import CustomizedProgressBars from "./Progress";
+import Speed from "./Speed";
 
-function StudentProfile() {
+function StudentAttended() {
   return (
     <>
       <Navbar />
@@ -121,53 +122,41 @@ function StudentProfile() {
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
                       <button
                         className="nav-link active"
-                        id="nav-leader-tab"
+                        id="nav-Attended-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-leader"
+                        data-bs-target="#nav-Attended"
                         type="button"
                         role="tab"
-                        aria-controls="nav-leader"
+                        aria-controls="nav-Attended"
                         aria-selected="true"
                       >
-                        Course
+                        Attended
                       </button>
                       <button
                         className="nav-link"
-                        id="nav-courses-tab"
+                        id="nav-Absent-tab"
                         data-bs-toggle="tab"
-                        data-bs-target="#nav-courses"
+                        data-bs-target="#nav-Absent"
                         type="button"
                         role="tab"
-                        aria-controls="nav-courses"
+                        aria-controls="nav-Absent"
                         aria-selected="false"
                       >
-                        Test
-                      </button>
-                      <button
-                        className="nav-link"
-                        id="nav-tests-tab"
-                        data-bs-toggle="tab"
-                        data-bs-target="#nav-tests"
-                        type="button"
-                        role="tab"
-                        aria-controls="nav-tests"
-                        aria-selected="false"
-                      >
-                        Premium classes
+                        Absent
                       </button>
                     </div>
                   </nav>
                   <div className="tab-content" id="nav-tabContent">
                     <div
                       className="tab-pane fade show active"
-                      id="nav-leader"
+                      id="nav-Attended"
                       role="tabpanel"
-                      aria-labelledby="nav-leader-tab"
+                      aria-labelledby="nav-Attended-tab"
                       tabindex="0"
                     >
-                      <Link to={"/StudentCourse"}>
+                      <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -178,13 +167,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <CustomizedProgressBars />
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentCourse"}>
+                      <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -195,13 +184,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <CustomizedProgressBars />
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentCourse"}>
+                      <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -212,13 +201,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <CustomizedProgressBars />
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentCourse"}>
+                      <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -229,10 +218,11 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <CustomizedProgressBars />
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
+
                       <div className="left-right-main">
                         <div>
                           <i class="fa-solid fa-angle-left"></i>
@@ -247,14 +237,14 @@ function StudentProfile() {
                     </div>
                     <div
                       className="tab-pane fade"
-                      id="nav-courses"
+                      id="nav-Absent"
                       role="tabpanel"
-                      aria-labelledby="nav-courses-tab"
+                      aria-labelledby="nav-Absent-tab"
                       tabindex="0"
                     >
                       <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -265,13 +255,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <h4 className="scorer">Scorer : 500 </h4>
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
                       <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -282,13 +272,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <h4 className="scorer">Scorer : 500 </h4>
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
                       <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -299,13 +289,13 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <h4 className="scorer">Scorer : 500 </h4>
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
                       <Link to={""}>
                         {" "}
-                        <div className="student-time-main">
+                        <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
                               src={Student_one}
@@ -316,10 +306,11 @@ function StudentProfile() {
                           <div className="student-time">
                             <h3>design & Illustration</h3>
                             <p>Date : 05 September 2024</p>
-                            <h4 className="scorer">Scorer : 500 </h4>
+                            <h6 className="scorer">Scorer : 500 </h6>
                           </div>
                         </div>
                       </Link>
+
                       <div className="left-right-main">
                         <div>
                           <i class="fa-solid fa-angle-left"></i>
@@ -423,6 +414,9 @@ function StudentProfile() {
                 </div>
               </div>
             </div>
+            {/* <div className="col-6">
+              <Speed />
+            </div> */}
           </div>
         </div>
       </div>
@@ -430,4 +424,4 @@ function StudentProfile() {
   );
 }
 
-export default StudentProfile;
+export default StudentAttended;
