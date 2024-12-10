@@ -9,7 +9,7 @@ const CheckMail = () => {
       <div className="container py-100 px-150 my-100">
         <div className="check-mail">
           <div className="mail-icon">
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
           </div>
           <h1>Check your Email</h1>
           <p>

@@ -16,12 +16,12 @@ function SignUp() {
                 <p>enter your new password sent to your Email</p>
               </div>
               <div>
-                <form className="sign-up-form">
+                <form className="login-form">
                   <div className="mb-3">
                     <label className="form-label">Full name </label>
                     <input
                       type="text"
-                      className="form-control sign-up-form"
+                      className="form-control login-form"
                       placeholder="Enter here..."
                     />
                   </div>
@@ -29,7 +29,7 @@ function SignUp() {
                     <label className="form-label">Email</label>
                     <input
                       type="Email"
-                      className="form-control sign-up-form"
+                      className="form-control login-form"
                       placeholder="Enter here..."
                     />
                   </div>
@@ -37,7 +37,7 @@ function SignUp() {
                     <label className="form-label">Password</label>
                     <input
                       type="password"
-                      className="form-control sign-up-form"
+                      className="form-control login-form"
                       placeholder="Enter here..."
                     />
                   </div>

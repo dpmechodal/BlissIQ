@@ -23,7 +23,7 @@
   font-size: 20px;
   font-weight: 700;
 }
-.sign-up-form {
+.login-form {
   text-align: start;
 }
 .forgot {
@@ -33,20 +33,10 @@
 .form-select:focus {
   box-shadow: none;
 }
-.sign-up-form label.form-label {
+.login-form label.form-label {
   color: #0c2c44;
   font-size: 14px;
   font-weight: 700;
-}
-.sign-up-form input.form-control {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background: #fff;
-  padding: 11px;
-  color: #424242;
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .sign-uo-heading h2 {
@@ -121,22 +111,6 @@
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
-}
-.submit-profile {
-  text-align: center;
-  margin: 10px 0;
-}
-.submit-profile button {
-  border-radius: 8px;
-  border: 1px solid #ffc445;
-  padding: 12px 110px;
-  background: #fed06e;
-  border: none;
-  overflow: hidden;
-  color: #0a2d67;
-  text-overflow: ellipsis;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 /* -------------------------------------Avatar---------------------------------------- */
@@ -226,11 +200,13 @@
 }
 .pen-edit {
   position: absolute;
-  right: 11px;
-  bottom: 13px;
+  right: 16px;
+  transform: translateY(-50%) !important;
+  top: 50%;
 }
 .pen-edit i {
   font-size: 13px;
+  color: #0C2C44;
 }
 
 /* -------------------------------------Verify Email---------------------------------------- */

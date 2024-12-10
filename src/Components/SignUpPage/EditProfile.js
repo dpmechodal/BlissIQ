@@ -8,7 +8,7 @@ function EditProfile() {
   return (
     <>
       <Navbar />
-      <div className="container py-100 pt-0">
+      <div className="container py-100 pt-4">
         <div className="get-start-profile">
           <div className="row align-items-center">
             <div className="col-12">
@@ -21,7 +21,7 @@ function EditProfile() {
                     <p>
                       <Link to="">
                         {" "}
-                        Choose your avatar <span>*</span>
+                        Add your profile picture <span>*</span>
                       </Link>
                     </p>
                   </div>
@@ -37,14 +37,14 @@ function EditProfile() {
               </div>
             </div>
             <div className="col-12">
-              <form action="" className="sign-up-form">
+              <form action="" className="login-form">
                 <div className="row">
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">Full name </label>
+                    <div className="profile-edit">
                       <input
                         type="text"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="Nupur kadam"
                       />
                       <div className="pen-edit">
@@ -52,12 +52,12 @@ function EditProfile() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">School </label>
+                    <div className="profile-edit">
                       <input
                         type="text"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="St. Andrews High School"
                       />
                       <div className="pen-edit">
@@ -65,12 +65,12 @@ function EditProfile() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">Email </label>
+                    <div className="profile-edit">
                       <input
                         type="Email"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="nkn@gmail.com"
                       />
                       <div className="pen-edit">
@@ -78,12 +78,12 @@ function EditProfile() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">Stander </label>
+                    <div className="profile-edit">
                       <input
                         type="text"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="KG"
                       />
                       <div className="pen-edit">
@@ -91,12 +91,12 @@ function EditProfile() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">Phone no. </label>
+                    <div className="profile-edit">
                       <input
                         type="Number"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="1234567890"
                       />
                       <div className="pen-edit">
@@ -104,12 +104,12 @@ function EditProfile() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="profile-edit">
+                  <div className="col-md-6 col-12 mb-3">
                       <label className="form-label">Board </label>
+                    <div className="profile-edit">
                       <input
                         type="text"
-                        className="form-control sign-up-form"
+                        className="form-control login-form"
                         placeholder="SSC"
                       />
                       <div className="pen-edit">

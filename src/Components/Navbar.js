@@ -7,26 +7,26 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <div className="container">
+        <div className="container-fluid px-0">
           <div className="header-main">
             <div className="logo-search">
               <Link to={"/Dashboard"}>
                 <img src={logo} alt="logo" className="img-fluid" />
               </Link>
-              <div class="form-group icon-search">
-                <span class="fa fa-search"></span>
-                <input type="text" class="form-control" placeholder="Search" />
+              <div className="form-group icon-search">
+                <span className="fa fa-search"></span>
+                <input type="text" className="form-control" placeholder="Search" />
               </div>
             </div>
             <div className="notification-user">
               <div className="notification">
                 <Link to={"/Dashboard"}>
-                  <i class="fa-regular fa-bell"></i>
+                  <i className="fa-regular fa-bell"></i>
                 </Link>
               </div>
-              <div class="dropdown dropstart">
+              <div className="dropdown dropstart">
                 <button
-                  class="btn btn-user "
+                  className="btn btn-user "
                   type="button"
                   id="dropdownMenuButton1"
                   data-bs-toggle="dropdown"
@@ -34,14 +34,14 @@ const Navbar = () => {
                 >
                   <img src={user} alt="" className="img-fluid" />
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <Link class="dropdown-item" to={"#"}>
+                    <Link className="dropdown-item" to={"#"}>
                       Profile
                     </Link>
                   </li>
                   <li>
-                    <Link class="dropdown-item" to={"#"}>
+                    <Link className="dropdown-item" to={"#"}>
                       Log Out
                     </Link>
                   </li>

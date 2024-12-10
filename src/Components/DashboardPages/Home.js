@@ -12,14 +12,16 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="container px-100">
+      <Sidebar />
+      <div className="asside">
+      <div className="container-fluid px-0">
         <div className="row">
           <div className="col-12">
-            <div className="home-pills">
+            <div className="home-pills h-main-tab">
               <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div className="nav nav-tabs" id="nav-tab" role="tablist">
                   <button
-                    class="nav-link active"
+                    className="nav-link active"
                     id="nav-leader-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-leader"
@@ -28,15 +30,14 @@ function Home() {
                     aria-controls="nav-leader"
                     aria-selected="true"
                   >
-                    <p>Leader</p>
-                    <p>board</p>
+                    <p>Leader board</p>
 
                     <div className="home-img-one">
                       <img src={home_one} className="img-fluid" alt="" />
                     </div>
                   </button>
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="nav-courses-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-courses"
@@ -45,15 +46,14 @@ function Home() {
                     aria-controls="nav-courses"
                     aria-selected="false"
                   >
-                    <p>Your</p>
-                    <p>Courses</p>
+                    <p>Your Courses</p>
 
                     <div className="home-img-one">
                       <img src={home_two} className="img-fluid" alt="" />
                     </div>
                   </button>
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="nav-tests-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-tests"
@@ -62,15 +62,14 @@ function Home() {
                     aria-controls="nav-tests"
                     aria-selected="false"
                   >
-                    <p>Your</p>
-                    <p>Tests</p>
+                    <p>Your Tests</p>
 
                     <div className="home-img-one">
                       <img src={home_three} className="img-fluid" alt="" />
                     </div>
                   </button>
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="nav-tests-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-live"
@@ -79,14 +78,13 @@ function Home() {
                     aria-controls="nav-live"
                     aria-selected="false"
                   >
-                    <p>Live</p>
-                    <p> classes</p>
+                    <p>Live classes</p>
                     <div className="home-img-one">
                       <img src={home_four} className="img-fluid" alt="" />
                     </div>
                   </button>
                   <button
-                    class="nav-link"
+                    className="nav-link"
                     id="nav-premium-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#nav-premium"
@@ -95,29 +93,29 @@ function Home() {
                     aria-controls="nav-premium"
                     aria-selected="false"
                   >
-                    <p>Premium</p>
-                    <p>classes</p>
+                    <p>Premium classes</p>
                     <div className="home-img-one">
                       <img src={home_five} className="img-fluid" alt="" />
                     </div>
                   </button>
                 </div>
               </nav>
-              <div class="tab-content" id="nav-tabContent">
+              <div className="tab-content" id="nav-tabContent">
                 <div
-                  class="tab-pane fade show active"
+                  className="tab-pane fade show active"
                   id="nav-leader"
                   role="tabpanel"
                   aria-labelledby="nav-leader-tab"
                   tabindex="0"
                 >
+                  ssss
                   <div className="row">
                     <div className="col-6"></div>
                     <div className="col-6"></div>
                   </div>
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="nav-courses"
                   role="tabpanel"
                   aria-labelledby="nav-courses-tab"
@@ -126,7 +124,7 @@ function Home() {
                   r
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="nav-tests"
                   role="tabpanel"
                   aria-labelledby="nav-tests-tab"
@@ -135,7 +133,7 @@ function Home() {
                   s
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="nav-live"
                   role="tabpanel"
                   aria-labelledby="nav-live-tab"
@@ -144,7 +142,7 @@ function Home() {
                   e
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="nav-premium"
                   role="tabpanel"
                   aria-labelledby="nav-premium-tab"
@@ -157,7 +155,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <Sidebar />
+      </div>
     </>
   );
 }
