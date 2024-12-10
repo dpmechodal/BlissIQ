@@ -19,7 +19,7 @@ const EmailLogin = () => {
             </div>
             <div className="col-lg-8 col-md-7 col-12">
               <div className="email-login-text">
-                <h1>Get Started</h1>
+                <h1>Mechodal Lgin Pages</h1>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisciLorem ipsum
                   dolor sit amet, consectetur adipisciLorem ipsum dolor sit
