@@ -12,6 +12,7 @@ import Avatar from "./Components/SignUpPage/Avatar";
 import EditProfile from "./Components/SignUpPage/EditProfile";
 import VerifyEmail from "./Components/SignUpPage/VerifyEmail";
 import Home from "./Components/DashboardPages/Home";
+import PremiumClasses from "./Components/DashboardPages/PremiumClassesDetails";
 import StudentProfile from "./Components/StudentProfilePages/StudentProfile";
 import StudentCourse from "./Components/StudentProfilePages/StudentCourse";
 import StudentAttended from "./Components/StudentProfilePages/StudentAttended";
@@ -33,6 +34,7 @@ function App() {
           <Route path="/EditProfile" element={<EditProfile />} />
           <Route path="/VerifyEmail" element={<VerifyEmail />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/PremiumClasses" element={<PremiumClasses />} />
           <Route path="/StudentProfile" element={<StudentProfile/>} />
           <Route path="/StudentAttended" element={<StudentAttended />} />
           <Route path="/StudentCourse" element={<StudentCourse />} />

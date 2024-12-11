@@ -16,6 +16,18 @@ a {
   text-decoration: none;
 }
 
+.student-profile-heading h2 {
+  color: #0c2c44;
+  font-size: 32px;
+  font-weight: 700;
+}
+.student-edit-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(57, 49, 133, 0.17);
+  margin-bottom: 40px;
+}
 .px-100 {
   padding-left: 230px;
 }
