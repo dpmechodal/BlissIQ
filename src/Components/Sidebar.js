@@ -1,8 +1,18 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import logout_img from "../images/logout-bg.svg";
 
 const Sidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    const modalElement = document.getElementById("staticBackdrop");
+    const modalInstance = window.bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    navigate("/");
+  };
 
   return (
     <div className="sidebar">
@@ -65,19 +75,57 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/logout"
+            to="#"
             className={location.pathname === "/logout" ? "active" : ""}
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
           >
             <i className="fa-solid fa-right-from-bracket"></i> Logout
           </Link>
         </li>
         <li>
           <Link
-            to="/help-support"
-            className={location.pathname === "/help-support" ? "active" : ""}
+            to="/HelpAanSupport"
+            className={location.pathname === "/HelpAanSupport" ? "active" : ""}
           >
             <i className="fa-solid fa-circle-question"></i> Help & Support
           </Link>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-dialog-centered ">
+              <div className="modal-content">
+                <div className="modal-body text-center">
+                  <div>
+                    <div className="logout-img">
+                      <img src={logout_img} className="img-fluid" alt="" />
+                    </div>
+                    <div className="log-out-pop">
+                      <h4>Are you sure you want to logout?</h4>
+                      <div className="logout-button">
+                        <button
+                          className="btn btn-c-email w-50"
+                          data-bs-dismiss="modal"
+                        >
+                          No
+                        </button>
+                        <button
+                          onClick={handleLogout}
+                          className="btn btn-c-google w-50"
+                        >
+                          Yes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

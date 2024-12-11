@@ -16,6 +16,10 @@ import PremiumClasses from "./Components/DashboardPages/PremiumClassesDetails";
 import StudentProfile from "./Components/StudentProfilePages/StudentProfile";
 import StudentCourse from "./Components/StudentProfilePages/StudentCourse";
 import StudentAttended from "./Components/StudentProfilePages/StudentAttended";
+import Notification from "./Components/HelpAndSupportPages/Notification";
+import HelpAanSupport from "./Components/HelpAndSupportPages/HelpAanSupport";
+import LessonComplete from "./Components/HelpAndSupportPages/LessonComplete";
+import QuestionTrue from "./Components/Course&TestPages/QuestionTrue";
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
           <Route path="/StudentProfile" element={<StudentProfile/>} />
           <Route path="/StudentAttended" element={<StudentAttended />} />
           <Route path="/StudentCourse" element={<StudentCourse />} />
+          <Route path="/Notification" element={<Notification />} />
+          <Route path="/HelpAanSupport" element={<HelpAanSupport />} />
+          <Route path="/LessonComplete" element={<LessonComplete />} />
+          <Route path="/QuestionTrue" element={<QuestionTrue />} />
         </Routes>
       </Router>
     </div>

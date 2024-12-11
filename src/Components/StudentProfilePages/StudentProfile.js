@@ -20,7 +20,6 @@ function StudentProfile() {
               <div className="student-edit-main">
                 <div className="student-profile-heading">
                   <a href="">
-                    {" "}
                     <i class="fa-solid fa-left-long"></i>
                   </a>
                   <h2>Student Profile</h2>

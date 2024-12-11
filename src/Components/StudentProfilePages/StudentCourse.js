@@ -361,7 +361,7 @@ function StudentCourse() {
                   </div>
                   <div className="Alphabets-main">
                     <div className="Alphabets_img">
-                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                      <img src={Alphabets_img} alt="" />
                     </div>
                     <div className="Alphabets-text">
                       <p>
@@ -383,7 +383,7 @@ function StudentCourse() {
                   </div>
                   <div className="Alphabets-main">
                     <div className="Alphabets_img">
-                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                      <img src={Alphabets_img} alt="" />
                     </div>
                     <div className="Alphabets-text">
                       <p>
@@ -405,7 +405,7 @@ function StudentCourse() {
                   </div>
                   <div className="Alphabets-main">
                     <div className="Alphabets_img">
-                      <img src={Alphabets_img} className="img-fluid" alt="" />
+                      <img src={Alphabets_img} alt="" />
                     </div>
                     <div className="Alphabets-text">
                       <p>

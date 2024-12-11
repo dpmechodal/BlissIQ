@@ -1,0 +1,144 @@
+/* -----------------------------Notification----------------------------------------------- */
+.notification-clear a {
+  color: #0c2c44;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid #0c2c44;
+}
+
+.notification-text p {
+  color: #0c2c44;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+  margin: 0 0 5px 0;
+}
+
+.solar_bell_bold img {
+  height: 45px;
+  width: 45px;
+}
+
+.notification-time {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.notification-time h5 {
+  color: #0c2c44;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.notification-time span {
+  display: block;
+  background-color: #0c2c44;
+  height: 7px;
+  width: 7px;
+  border-radius: 100%;
+  margin-right: -12px;
+}
+
+.notification-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notification-border {
+  width: 50%;
+  height: 2px;
+  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 15px 0 20px 0;
+}
+
+.Disable-notification {
+  opacity: 0.2;
+}
+
+/* -----------------------------Help and support----------------------------------------- */
+
+.help-bg {
+  background-image: url("../../images/HelpAndSupportPages/Help-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  flex-direction: column;
+  padding: 70px 60px;
+}
+.help-form input {
+  margin-bottom: 20px;
+}
+.help-form label {
+  color: #0c2c44;
+  font-size: 19px;
+  font-weight: 700;
+}
+.help-form label span {
+  color: #cb2439;
+}
+.help-form ::placeholder {
+  color: rgba(66, 66, 66, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+}
+.help-form .form-control {
+  padding: 16px;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+}
+.help-photo-icon i {
+  margin-right: 10px;
+}
+.help-photo-icon {
+  color: #0a2d67;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ----------------------------- Lesson Complete----------------------------------------- */
+
+.lesson-complete-heading h2 {
+  color: #0c2c44;
+  font-size: 36px;
+  font-weight: 700;
+}
+.lesson-complete-heading p {
+  color: #424242;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.lesson-complete-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.help-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
