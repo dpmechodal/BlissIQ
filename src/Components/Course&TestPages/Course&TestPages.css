@@ -1,0 +1,63 @@
+.Question-bg {
+  background-image: url("../../images/Course&TestPages/Question-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.bear-img {
+  background-color: #ffc445;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+.bear-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.bear-text p {
+  color: #0c2c44;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.bear-bars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.bear-bars .css-16mbrje-MuiStack-root > :not(style) ~ :not(style) {
+  margin-top: -21px;
+}
+
+.bear-bars .css-1dsocjv-MuiLinearProgress-root .MuiLinearProgress-bar {
+  border-radius: 5px;
+  background-color: #ffc445 !important;
+}
+
+.bear-bars .css-1dsocjv-MuiLinearProgress-root.MuiLinearProgress-colorPrimary {
+  background-color: #c7c7c7 !important;
+}
+
+.question-heading h5 {
+  color: var(--Sub-text, #424242);
+  font-size: 24px;
+  font-weight: 700;
+}
+.question-heading h3 {
+  color: var(--text-icon, #0c2c44);
+  font-size: 36px;
+  font-weight: 700;
+}

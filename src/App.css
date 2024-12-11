@@ -292,7 +292,7 @@ a {
   scrollbar-width: none;
   padding: 20px 0;
 }
-.asside{
+.asside {
   margin-top: 30px;
   margin-left: 280px;
   margin-right: 30px;
@@ -327,6 +327,52 @@ a {
 
 .sidebar-menu li a i {
   margin-right: 10px;
+}
+
+.student-profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.student-profile-heading i {
+  font-size: 20px;
+}
+.student-profile-heading a {
+  color: #0c2c44;
+}
+.student-profile-heading h2 {
+  color: #0c2c44;
+  font-size: 32px;
+  font-weight: 700;
+}
+.student-edit-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(57, 49, 133, 0.17);
+  margin-bottom: 60px;
+}
+
+.edit-student {
+  font-size: 20px;
+}
+.edit-student a {
+  color: #0c2c44;
+}
+
+.logout-img img {
+  height: 440px;
+}
+.log-out-pop h4 {
+  color: #0c2c44;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 0 25px 0;
+}
+.logout-button {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 /* media  */

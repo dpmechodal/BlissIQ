@@ -1,9 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../images/logo.svg";
 import user from "../images/user.svg";
+import logout_img from "../images/logout-bg.svg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    const modalElement = document.getElementById("staticBackdrop");
+    const modalInstance = window.bootstrap.Modal.getInstance(modalElement);
+    modalInstance.hide();
+
+    navigate("/");
+  };
+
   return (
     <>
       <div className="navbar">
@@ -15,12 +26,16 @@ const Navbar = () => {
               </Link>
               <div className="form-group icon-search">
                 <span className="fa fa-search"></span>
-                <input type="text" className="form-control" placeholder="Search" />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Search"
+                />
               </div>
             </div>
             <div className="notification-user">
               <div className="notification">
-                <Link to={"/Dashboard"}>
+                <Link to={"/Notification"}>
                   <i className="fa-regular fa-bell"></i>
                 </Link>
               </div>
@@ -34,18 +49,65 @@ const Navbar = () => {
                 >
                   <img src={user} alt="" className="img-fluid" />
                 </button>
-                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton1"
+                >
                   <li>
                     <Link className="dropdown-item" to={"#"}>
                       Profile
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={"#"}>
+                    <button
+                      className="dropdown-item"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
                       Log Out
-                    </Link>
+                    </button>
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <!-- Modal --> */}
+      <div
+        className="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabIndex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered ">
+          <div className="modal-content">
+            <div className="modal-body text-center">
+              <div>
+                <div className="logout-img">
+                  <img src={logout_img} className="img-fluid" alt="" />
+                </div>
+                <div className="log-out-pop">
+                  <h4>Are you sure you want to logout?</h4>
+                  <div className="logout-button">
+                    <button
+                      className="btn btn-c-email w-50"
+                      data-bs-dismiss="modal"
+                    >
+                      No
+                    </button>
+                    <button
+                      onClick={handleLogout}
+                      className="btn btn-c-google w-50"
+                    >
+                      Yes
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
