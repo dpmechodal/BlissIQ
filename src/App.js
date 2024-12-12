@@ -21,6 +21,7 @@ import Notification from "./Components/HelpAndSupportPages/Notification";
 import HelpAanSupport from "./Components/HelpAndSupportPages/HelpAanSupport";
 import LessonComplete from "./Components/HelpAndSupportPages/LessonComplete";
 import QuestionTrue from "./Components/Course&TestPages/QuestionTrue";
+import LiveSessions from "./Components/StudentProfilePages/LiveSessions";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path="/HelpAanSupport" element={<HelpAanSupport />} />
           <Route path="/LessonComplete" element={<LessonComplete />} />
           <Route path="/QuestionTrue" element={<QuestionTrue />} />
+          <Route path="/LiveSessions" element={<LiveSessions/>} />
         </Routes>
       </Router>
     </div>

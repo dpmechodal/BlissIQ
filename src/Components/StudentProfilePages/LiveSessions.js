@@ -5,26 +5,24 @@ import "./StudentProfilePages.css";
 import { Link } from "react-router-dom";
 import Student_one from "../../images/StudentProfile/Student-one.svg";
 import emoji_crown from "../../images/StudentProfile/emoji-crown.svg";
-import mdi_tick from "../../images/StudentProfile/mdi_tick.svg";
 import CustomizedProgressBars from "./Progress";
-import Speed from "./Speed";
+import ChartTest from "./ChartTest";
 
-function StudentAttended() {
+function LiveSessions() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
-      <div className="asside">
+    <Navbar/>
+    <Sidebar/>
+       <div className="asside">
         <div className="container-fluid px-0">
           <div className="row">
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
                   <a href="">
-                    {" "}
                     <i class="fa-solid fa-left-long"></i>
                   </a>
-                  <h2>Student Profile</h2>
+                  <h2>Live sessions </h2>
                 </div>
                 <div className="edit-student">
                   <Link to={"/"}>
@@ -53,71 +51,12 @@ function StudentAttended() {
                   <h5>
                     School : <span>St. Andrews High School</span>
                   </h5>
-                  <h5>
+                  <h5 className="mb-0">
                     Class: <span>1st standard </span>
                   </h5>
                 </div>
               </div>
-              <div className="points-main">
-                <div className="points-earned">
-                  <h4>Points earned</h4>
-                  <h3>
-                    124 <span>Points</span>
-                  </h3>
-                </div>
-                <div className="points-earned">
-                  <h4>
-                    Time Spent <span>(in Minutes)</span>
-                  </h4>
-                  <h3>124</h3>
-                </div>
-                <div className="points-earned">
-                  <h4>
-                    Attendance <span>(weekly)</span>
-                  </h4>
-                  <h3>124</h3>
-                </div>
-              </div>
-
-              <div>
-                 <Link to={"/LiveSessions"}>
-                <div className="live-main-audio">
-                   <div className="live-sessions">
-                    <div className="audio-player">
-                      <i class="fa-solid fa-play"></i>
-                    </div>
-                    <h3>Live sessions </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>08</span>
-                  </div>
-                </div>
-                 </Link>
-                <div className="live-main-audio">
-                  <div className="live-sessions course-text">
-                    <div className="audio-player course">
-                      <img src={mdi_tick} className="img-fluid" alt="" />
-                    </div>
-                    <h3>Course completed </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>24</span>
-                  </div>
-                </div>
-                <div className="live-main-audio">
-                  <div className="live-sessions rank-section ">
-                    <div className="audio-player rank">
-                      <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3>Student Rank </h3>
-                  </div>
-                  <div className="live-count">
-                    <span>08</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-6">
+              <div className="pills-live-sessions">
               <div>
                 <div className="s-pills s-main-tab">
                   <nav>
@@ -156,8 +95,7 @@ function StudentAttended() {
                       aria-labelledby="nav-Attended-tab"
                       tabindex="0"
                     >
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -173,8 +111,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -190,8 +127,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -207,8 +143,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -244,8 +179,7 @@ function StudentAttended() {
                       aria-labelledby="nav-Absent-tab"
                       tabindex="0"
                     >
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -261,8 +195,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -278,8 +211,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -295,8 +227,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentAttended"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -416,14 +347,93 @@ function StudentAttended() {
                 </div>
               </div>
             </div>
-            {/* <div className="col-6">
-              <Speed />
-            </div> */}
+            </div>
+             <div className="col-xl-6 col-lg-6 col-12">
+                        <div className="Course-bg">
+                          <div className="student-course-main">
+                            <div className="course-student-img">
+                              <img
+                                src={Student_one}
+                                className="img-fluid"
+                                alt=""
+                              />
+                            </div>
+                            <div className="student-course-heading">
+                              <h4>Foundation of English </h4>
+                              <h3>Date : 05 September 2024</h3>
+                              <p>Total Scorer : 500/ 500 </p>
+                            </div>
+                           
+                          </div>
+                           <div>
+                             
+                              <div className="testChar-main">
+                              <div className="testChar-heading">
+                                <h3>
+                                  Alphabets
+                                </h3>
+                              </div>
+                                <ChartTest />
+                                 <div className="total-chart-main">
+                                  <div className="total-main">
+                                  <div className="Total-chart"></div>
+                                  <h5>Total Obtained  <span>344</span></h5>
+                                </div>
+                                <div className="total-out">
+                                  <div className="total-chart"></div>
+                                  <h5>out of <span>500</span></h5>
+                                </div>
+                                 </div>
+                              </div>
+                              <div className="testChar-main">
+                              <div className="testChar-heading">
+                                <h3>
+                                  Phonetics
+                                </h3>
+                              </div>
+                                <ChartTest />
+                                 <div className="total-chart-main">
+                                  <div className="total-main">
+                                  <div className="Total-chart"></div>
+                                  <h5>Total Obtained  <span>344</span></h5>
+                                </div>
+                                <div className="total-out">
+                                  <div className="total-chart"></div>
+                                  <h5>out of <span>500</span></h5>
+                                </div>
+                                 </div>
+                              </div>
+                               <div className="testChar-main">
+                              <div className="testChar-heading">
+                                <h3>
+                                  Numbers
+                                </h3>
+                              </div>
+                                <ChartTest />
+                                 <div className="total-chart-main">
+                                  <div className="total-main">
+                                  <div className="Total-chart"></div>
+                                  <h5>Total Obtained  <span>344</span></h5>
+                                </div>
+                                <div className="total-out">
+                                  <div className="total-chart"></div>
+                                  <h5>out of <span>500</span></h5>
+                                </div>
+                                 </div>
+                              </div>
+                              
+                               
+                              
+                            </div>
+                        </div>
+                      </div>
+           
+            </div>
+            
           </div>
         </div>
-      </div>
     </>
-  );
+  )
 }
 
-export default StudentAttended;
+export default LiveSessions

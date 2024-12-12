@@ -51,7 +51,7 @@ function StudentProfile() {
                   <h5>
                     School : <span>St. Andrews High School</span>
                   </h5>
-                  <h5>
+                  <h5 className="mb-0">
                     Class: <span>1st standard </span>
                   </h5>
                 </div>
@@ -78,6 +78,7 @@ function StudentProfile() {
               </div>
 
               <div>
+                                 <Link to={"/LiveSessions"}>
                 <div className="live-main-audio">
                   <div className="live-sessions">
                     <div className="audio-player">
@@ -89,6 +90,7 @@ function StudentProfile() {
                     <span>08</span>
                   </div>
                 </div>
+                  </Link>
                 <div className="live-main-audio">
                   <div className="live-sessions course-text">
                     <div className="audio-player course">
@@ -251,8 +253,7 @@ function StudentProfile() {
                       aria-labelledby="nav-courses-tab"
                       tabindex="0"
                     >
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/StudentCourse#nav-courses-tab"}>
                         <div className="student-time-main">
                           <div className="date-student">
                             <img

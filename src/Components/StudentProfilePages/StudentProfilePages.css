@@ -1,3 +1,19 @@
+.student-profile-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.student-profile-heading i {
+  font-size: 20px;
+}
+.student-profile-heading a {
+  color: #0c2c44;
+}
+.student-profile-heading h2 {
+  color: #0c2c44;
+  font-size: 32px;
+  font-weight: 700;
+}
 .edit-student {
   font-size: 20px;
 }
@@ -203,7 +219,7 @@
   align-items: center;
   justify-content: center;
   color: #424242;
-
+  border-radius: 0;
   font-size: 24px;
   font-weight: 400;
 }
@@ -306,13 +322,13 @@
 /* ----------------------------------------Course--------------------------------------------- */
 
 .Course-bg {
-  background-image: url("../../images/StudentProfile/Course-bg.svg");
+  /* background-image: url("../../images/StudentProfile/Course-bg.svg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
   flex-direction: column;
-  padding: 40px 60px;
+  padding: 50px;
 }
 
 .course-student-img img {
@@ -399,8 +415,7 @@
   color: #404040;
   font-size: 16px;
   font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 10px 0;
 }
 
 .student-time h6 {
@@ -421,4 +436,88 @@
 
   background: var(--small-text, rgba(66, 66, 66, 0.3));
   opacity: 0.4;
+}
+
+/* ----------------------------------------Chart--------------------------------------------- */
+.testChar-main {
+    background-color: #fff;
+    border-radius: 20px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 40px;
+margin-bottom: 30px;
+}
+
+.apexcharts-toolbar{
+  display: none !important;
+}
+
+.Total-chart{
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: #FED06E;
+}
+.total-main{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.total-main h5{
+  color: #424242;
+font-size: 18px;
+font-weight: 700;
+margin: 0;
+}
+.total-main h5 span{
+  color: #0C2C44;
+  font-size: 20px;
+}
+.total-chart{
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: #424242;
+  opacity: 0.4;
+}
+.total-out{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.total-out h5{
+  color: #424242;
+font-size: 20px;
+font-weight: 400;
+margin: 0;
+}
+.total-out h5 span{
+  color: #0C2C44;
+}
+
+.total-chart-main{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#chart .apexcharts-radialbar-path-0 {
+  fill: #FED06E !important;
+}
+
+.apexcharts-datalabels-group{
+  margin-bottom: 20px !important;
+}
+
+.testChar-heading h3{
+  color: #0C2C44;
+font-size: 29px;
+font-weight: 700;
+text-transform: capitalize;
+}
+
+.pills-live-sessions{
+  margin-top: 30px;
 }
