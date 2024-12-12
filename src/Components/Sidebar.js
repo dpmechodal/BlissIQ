@@ -127,6 +127,11 @@ const Sidebar = () => {
             </div>
           </div>
         </li>
+        <li>
+          <Link to="/LiveCall" className={location.pathname === "/LiveCall" ? "active" : ""} >
+            <i className="fa-solid fa-right-from-bracket"></i> Live Call
+          </Link>
+        </li>
       </ul>
     </div>
   );

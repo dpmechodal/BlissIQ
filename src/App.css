@@ -15,12 +15,6 @@ body {
 a {
   text-decoration: none;
 }
-
-.student-profile-heading h2 {
-  color: #0c2c44;
-  font-size: 32px;
-  font-weight: 700;
-}
 .student-edit-main {
   display: flex;
   justify-content: space-between;
@@ -308,6 +302,9 @@ a {
   margin-top: 30px;
   margin-left: 280px;
   margin-right: 30px;
+}
+.without-sidebar{
+  margin: 30px !important;
 }
 
 .sidebar-menu {
