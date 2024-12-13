@@ -20,10 +20,9 @@ function StudentAttended() {
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
-                  <a href="">
-                    {" "}
+                  <Link to={'/StudentProfile'}>
                     <i class="fa-solid fa-left-long"></i>
-                  </a>
+                  </Link>
                   <h2>Student Profile</h2>
                 </div>
                 <div className="edit-student">
@@ -80,7 +79,7 @@ function StudentAttended() {
               </div>
 
               <div>
-                 <Link to={"/LiveSessions"}>
+                 <Link to={"#"}>
                 <div className="live-main-audio">
                    <div className="live-sessions">
                     <div className="audio-player">
@@ -156,8 +155,7 @@ function StudentAttended() {
                       aria-labelledby="nav-Attended-tab"
                       tabindex="0"
                     >
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -173,8 +171,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -190,8 +187,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -207,8 +203,7 @@ function StudentAttended() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={""}>
-                        {" "}
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img

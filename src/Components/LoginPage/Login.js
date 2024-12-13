@@ -43,7 +43,7 @@ const Login = () => {
                     <Link to={"/ForgotPassword"}>Forgot Password?</Link>
                   </div>
                   <div className="mb-3">
-                    <Link to={"#"} className="btn btn-c-email w-100">
+                    <Link to={"/Home"} className="btn btn-c-email w-100">
                       Login
                     </Link>
                   </div>

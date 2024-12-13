@@ -23,7 +23,7 @@ function Avatar() {
           <div className="row justify-content-center">
             <div className="col-12">
               <div className="avatar-center">
-                <div className="Avatar_one">
+                <div className="Avatar_one mb-3">
                   <img src={Avatar_one} className="img-fluid" alt="" />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ function Avatar() {
               <div>
                 <div className="avatar-button">
                   <Link
-                    to={"/EditProfile"}
+                    to={"/Home"}
                     className="btn btn-s-email w-100 mt-3"
                   >
                     Continue

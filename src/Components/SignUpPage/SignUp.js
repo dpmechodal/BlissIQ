@@ -57,7 +57,7 @@ function SignUp() {
                 </form>
                 <div className="account-login">
                   <span>
-                    Already have an account?<Link to={"/"}>Login</Link>{" "}
+                    Already have an account ? <Link to={"/Login"}> Login</Link>{" "}
                   </span>
                 </div>
               </div>

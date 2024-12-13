@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="container-fluid px-0">
           <div className="header-main">
             <div className="logo-search">
-              <Link to={"/Dashboard"}>
+              <Link to={"/Home"}>
                 <img src={logo} alt="logo" className="img-fluid" />
               </Link>
               <div className="form-group icon-search">
@@ -54,8 +54,8 @@ const Navbar = () => {
                   aria-labelledby="dropdownMenuButton1"
                 >
                   <li>
-                    <Link className="dropdown-item" to={"#"}>
-                      Profile
+                    <Link className="dropdown-item" to={"/EditProfile"}>
+                      Edit Profile
                     </Link>
                   </li>
                   <li>

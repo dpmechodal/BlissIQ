@@ -43,24 +43,24 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/test"
-            className={location.pathname === "/test" ? "active" : ""}
+            to="/Question"
+            className={location.pathname === "/Question" ? "active" : ""}
           >
             <i className="fa fa-pencil"></i> Test
           </Link>
         </li>
         <li>
           <Link
-            to="/dictionary"
-            className={location.pathname === "/dictionary" ? "active" : ""}
+            to="/Dictionary"
+            className={location.pathname === "/Dictionary" ? "active" : ""}
           >
             <i className="fa-solid fa-bookmark"></i> Dictionary
           </Link>
         </li>
         <li>
           <Link
-            to="/chats"
-            className={location.pathname === "/chats" ? "active" : ""}
+            to="/Chat"
+            className={location.pathname === "/Chat" ? "active" : ""}
           >
             <i className="fa-regular fa-message"></i> Chats
           </Link>
@@ -126,11 +126,6 @@ const Sidebar = () => {
               </div>
             </div>
           </div>
-        </li>
-        <li>
-          <Link to="/LiveCall" className={location.pathname === "/LiveCall" ? "active" : ""} >
-            <i className="fa-solid fa-right-from-bracket"></i> Live Call
-          </Link>
         </li>
       </ul>
     </div>

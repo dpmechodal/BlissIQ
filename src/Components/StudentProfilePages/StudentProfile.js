@@ -69,12 +69,12 @@ function StudentProfile() {
                   </h4>
                   <h3>124</h3>
                 </div>
-                <div className="points-earned">
+                <Link to={'/StudentAttended'} className="points-earned">
                   <h4>
                     Attendance <span>(weekly)</span>
                   </h4>
                   <h3>124</h3>
-                </div>
+                </Link>
               </div>
 
               <div>

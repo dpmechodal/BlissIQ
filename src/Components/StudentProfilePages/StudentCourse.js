@@ -19,10 +19,9 @@ function StudentCourse() {
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
-                  <a href="">
-                    {" "}
+                  <Link to={'/StudentProfile'}>
                     <i class="fa-solid fa-left-long"></i>
-                  </a>
+                  </Link>
                   <h2>Student Profile</h2>
                 </div>
                 <div className="edit-student">

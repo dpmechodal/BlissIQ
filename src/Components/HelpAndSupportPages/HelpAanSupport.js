@@ -21,7 +21,6 @@ function HelpAanSupport() {
               <div className="student-edit-main">
                 <div className="student-profile-heading">
                   <Link to="">
-                    {" "}
                     <i class="fa-solid fa-left-long"></i>
                   </Link>
                   <h2>Help and support </h2>
@@ -124,7 +123,7 @@ function HelpAanSupport() {
                   <img src={successfully_img} className="img-fluid" alt="" />
                 </div>
                 <div className="log-out-pop ">
-                  <h3>Your message has been received successfully</h3>
+                  <h4>Your message has been received successfully</h4>
                   <div className="logout-button mt-3">
                     <button
                       className="btn btn-c-google w-50"

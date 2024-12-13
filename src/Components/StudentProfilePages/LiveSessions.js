@@ -19,9 +19,9 @@ function LiveSessions() {
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
-                  <a href="">
+                  <Link to={'/StudentAttended'}>
                     <i class="fa-solid fa-left-long"></i>
-                  </a>
+                  </Link>
                   <h2>Live sessions </h2>
                 </div>
                 <div className="edit-student">
@@ -95,7 +95,7 @@ function LiveSessions() {
                       aria-labelledby="nav-Attended-tab"
                       tabindex="0"
                     >
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -111,7 +111,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -127,7 +127,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -143,7 +143,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Attended-main">
                           <div className="date-student">
                             <img
@@ -179,7 +179,7 @@ function LiveSessions() {
                       aria-labelledby="nav-Absent-tab"
                       tabindex="0"
                     >
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -195,7 +195,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -211,7 +211,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img
@@ -227,7 +227,7 @@ function LiveSessions() {
                           </div>
                         </div>
                       </Link>
-                      <Link to={"/StudentAttended"}>
+                      <Link to={"/LiveSessions"}>
                         <div className="student-time-main Absent-main">
                           <div className="date-student">
                             <img

@@ -20,8 +20,30 @@ import StudentAttended from "./Components/StudentProfilePages/StudentAttended";
 import Notification from "./Components/HelpAndSupportPages/Notification";
 import HelpAanSupport from "./Components/HelpAndSupportPages/HelpAanSupport";
 import LessonComplete from "./Components/HelpAndSupportPages/LessonComplete";
-import QuestionTrue from "./Components/Course&TestPages/QuestionTrue";
+// import QuestionTrue from "./Components/Course&TestPages/QuestionTrue";
 import LiveSessions from "./Components/StudentProfilePages/LiveSessions";
+import Chat from "./Components/Chat";
+import Dictionary from "./Components/Dictionary";
+import Question from "./Components/Course&TestPages/Question";
+import QuestionTwo from "./Components/Course&TestPages/QuestionTwo";
+import QuestionThree from "./Components/Course&TestPages/Questionthree";
+import QuestionSeven from "./Components/Course&TestPages/QuestionSeven";
+import QuestionEight from "./Components/Course&TestPages/QuestionEight";
+import TestComplete from "./Components/Course&TestPages/TestComplete";
+import QuestionSixteen from "./Components/Course&TestPages/QuestionSixteen";
+import QuestionSenventeen from "./Components/Course&TestPages/QuestionSenventeen";
+import QuestionEighteen from "./Components/Course&TestPages/QuestionEighteen";
+import QuestionNineteen from "./Components/Course&TestPages/QuestionNineteen";
+import QuestionTwenty from "./Components/Course&TestPages/QuestionTwenty";
+import QuestionTwentyOne from "./Components/Course&TestPages/QuestionTwentyOne";
+import QuestionTwentyTwo from "./Components/Course&TestPages/QuestionTwentyTwo";
+import QuestionTwentyThree from "./Components/Course&TestPages/QuestionTwentyThree";
+import QuestionTwentyFour from "./Components/Course&TestPages/QuestionTwentyFour";
+import QuestionTwentyFive from "./Components/Course&TestPages/QuestionTwentyFive";
+import QuestionTwentySix from "./Components/Course&TestPages/QuestionTwentySix";
+import QuestionTwentySeven from "./Components/Course&TestPages/QuestionTwentySeven";
+import QuestionTwentyEight from "./Components/Course&TestPages/QuestionTwentyEight";
+import QuestionTwentyNine from "./Components/Course&TestPages/QuestionTwentyNine";
 
 function App() {
   return (
@@ -48,8 +70,30 @@ function App() {
           <Route path="/Notification" element={<Notification />} />
           <Route path="/HelpAanSupport" element={<HelpAanSupport />} />
           <Route path="/LessonComplete" element={<LessonComplete />} />
-          <Route path="/QuestionTrue" element={<QuestionTrue />} />
+          {/* <Route path="/QuestionTrue" element={<QuestionTrue />} /> */}
           <Route path="/LiveSessions" element={<LiveSessions/>} />
+          <Route path="/Chat" element={<Chat/>} />
+          <Route path="/Dictionary" element={<Dictionary/>} />
+          <Route path="/Question" element={<Question />} />
+          <Route path="/QuestionTwo" element={<QuestionTwo />} />
+          <Route path="/QuestionThree" element={<QuestionThree />} />
+          <Route path="/QuestionSeven" element={<QuestionSeven />} />
+          <Route path="/QuestionEight" element={<QuestionEight />} />
+          <Route path="/TestComplete" element={<TestComplete />} />
+          <Route path="/QuestionSixteen" element={<QuestionSixteen />} />
+          <Route path="/QuestionSenventeen" element={<QuestionSenventeen />} />
+          <Route path="/QuestionEighteen" element={<QuestionEighteen />} />
+          <Route path="/QuestionNineteen" element={<QuestionNineteen />} />
+          <Route path="/QuestionTwenty" element={<QuestionTwenty />} />
+          <Route path="/QuestionTwentyOne" element={<QuestionTwentyOne />} />
+          <Route path="/QuestionTwentyTwo" element={<QuestionTwentyTwo />} />
+          <Route path="/QuestionTwentyThree" element={<QuestionTwentyThree />} />
+          <Route path="/QuestionTwentyFour" element={<QuestionTwentyFour />} />
+          <Route path="/QuestionTwentyFive" element={<QuestionTwentyFive />} />
+          <Route path="/QuestionTwentySix" element={<QuestionTwentySix />} />
+          <Route path="/QuestionTwentySeven" element={<QuestionTwentySeven />} />
+          <Route path="/QuestionTwentyEight" element={<QuestionTwentyEight />} />
+          <Route path="/QuestionTwentyNine" element={<QuestionTwentyNine />} />
         </Routes>
       </Router>
     </div>

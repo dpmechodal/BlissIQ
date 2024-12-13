@@ -14,7 +14,9 @@ function AddProfile() {
             <div className="col-12">
               <div>
                 <div className="profile-img">
-                  <img src={profile} className="img-fluid" alt="" />
+                  <Link to={'/Avatar'}>
+                    <img src={profile} className="img-fluid" alt="" />
+                  </Link>
 
                   <p>
                     {" "}
@@ -97,7 +99,7 @@ function AddProfile() {
                   </div>
                   <div className="col-12">
                     <div className="">
-                      <Link to={"/Avatar"} className="btn btn-s-email w-100">
+                      <Link to={"/Home"} className="btn btn-s-email w-100">
                         Continue
                       </Link>
                     </div>

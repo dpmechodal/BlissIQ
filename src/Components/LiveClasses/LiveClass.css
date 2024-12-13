@@ -5,8 +5,9 @@
 }
 .full-call{
     position: relative;
+    width: 100%;
 }
-.call-icon{
+.call-icon a{
     width: 50px;
     background-color: #FFF;
     border-radius: 50%;
@@ -15,6 +16,16 @@
     justify-content: center;
     height: 50px;
     max-width: 50px;
+}
+.side-chat a{
+    width: 60px;
+    background-color: #FFF;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    max-width: 60px;
 }
 .call-icon a{
     font-size: 24px;
@@ -74,4 +85,108 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.send-call img{
+    border-radius: 50%;
+    border: 4px solid #C2E0FF;
+    width: 210px;
+    height: 210px;
+    max-width: 210px;
+}
+.sender-img{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.side-chat a img{
+    width: 34px !important;
+    height: auto !important;
+}
+.call-with-chat{
+    display: flex;
+}
+.live-chat {
+    width: 0;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+.live-chat.open {
+    width: 40%;
+}
+.side-chat img {
+    transition: transform 0.3s ease;
+}
+
+.side-chat.rotated img {
+    transform: rotate(180deg);
+}  
+.aftab-join{
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(59, 59, 95, 0.05);
+    background: #FFF;
+}
+.aftab-join img{
+    width: 66px;
+    height: 66px;
+    max-width: 66px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+.aftab-join h5{
+    color: #0C2C44;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.aftab-join h5 span{
+    color: #0C9038;
+    font-size: 14px;
+    font-weight: 400;
+}
+.aftab-join h5 span.ans{
+    color: #424242;
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+.user-typing{
+    display: flex;
+    border-radius: 18px 18px 0px 0px;
+    border-top: 2px solid rgba(66, 66, 66, 0.30);
+    background: #F6F6F6;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.user-typing input.form-control{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #0C2C44;
+    font-size: 20px;
+    font-weight: 700;
+}
+.user-typing a{
+    width: 40px;
+    height: 40px;
+    color: #0C2C44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+.user-join-chat {
+    height: 100%;
+    position: relative;
+}
+.user-join {
+    height: 81vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }

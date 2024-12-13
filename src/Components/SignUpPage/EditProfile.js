@@ -14,13 +14,12 @@ function EditProfile() {
             <div className="col-12">
               <div>
                 <div className="avatar-center">
-                  <div className="Avatar_one">
+                  <Link to={'/Avatar'} className="Avatar_one mb-3">
                     <img src={Avatar_one} className="img-fluid" alt="" />
-                  </div>
+                  </Link>
                   <div>
                     <p>
-                      <Link to="">
-                        {" "}
+                      <Link to="/Avatar">
                         Add your profile picture <span>*</span>
                       </Link>
                     </p>
@@ -119,7 +118,7 @@ function EditProfile() {
                   </div>
                   <div className="col-12">
                     <div className="submit-profile">
-                      <Link to={"/Home"} className="btn btn-s-email w-100">
+                      <Link to={"/StudentProfile"} className="btn btn-s-email w-100">
                         Continue
                       </Link>
                     </div>

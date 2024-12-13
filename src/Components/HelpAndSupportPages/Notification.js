@@ -16,8 +16,7 @@ function Notification() {
             <div className="col-12">
               <div className="student-edit-main">
                 <div className="student-profile-heading">
-                  <Link to="">
-                    {" "}
+                  <Link to="/Home">
                     <i class="fa-solid fa-left-long"></i>
                   </Link>
                   <h2>Notification</h2>

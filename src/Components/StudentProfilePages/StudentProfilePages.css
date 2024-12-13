@@ -322,7 +322,7 @@
 /* ----------------------------------------Course--------------------------------------------- */
 
 .Course-bg {
-  /* background-image: url("../../images/StudentProfile/Course-bg.svg"); */
+  background-image: url("../../images/StudentProfile/Course-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
