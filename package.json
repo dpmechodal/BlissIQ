@@ -1,5 +1,6 @@
 {
-  "name": "urvi-bazzar",
+  "name": "BlissIQ",
+  "homepage": "https://blissiq-student.urvibazaar.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
