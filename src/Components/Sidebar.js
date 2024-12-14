@@ -27,16 +27,16 @@ const Sidebar = () => {
         </li>
         <li>
           <Link
-            to="/my-classes"
-            className={location.pathname === "/my-classes" ? "active" : ""}
+            to="/MyClasses"
+            className={location.pathname === "/MyClasses" ? "active" : ""}
           >
             <i className="fa fa-users"></i> My Classes
           </Link>
         </li>
         <li>
           <Link
-            to="/course"
-            className={location.pathname === "/course" ? "active" : ""}
+            to="/Course"
+            className={location.pathname === "/Course" ? "active" : ""}
           >
             <i className="fa fa-book"></i> Course
           </Link>

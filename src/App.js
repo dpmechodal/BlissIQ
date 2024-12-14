@@ -12,6 +12,8 @@ import Avatar from "./Components/SignUpPage/Avatar";
 import EditProfile from "./Components/SignUpPage/EditProfile";
 import VerifyEmail from "./Components/SignUpPage/VerifyEmail";
 import Home from "./Components/DashboardPages/Home";
+import Course from "./Components/DashboardPages/Course";
+import MyClasses from "./Components/DashboardPages/MyClasses";
 import LiveCall from "./Components/LiveClasses/LiveCall";
 import PremiumClasses from "./Components/DashboardPages/PremiumClassesDetails";
 import StudentProfile from "./Components/StudentProfilePages/StudentProfile";
@@ -71,6 +73,8 @@ function App() {
           <Route path="/EditProfile" element={<EditProfile />} />
           <Route path="/VerifyEmail" element={<VerifyEmail />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/Course" element={<Course />} />
+          <Route path="/MyClasses" element={<MyClasses />} />
           <Route path="/LiveCall" element={<LiveCall />} />
           <Route path="/PremiumClasses" element={<PremiumClasses />} />
           <Route path="/StudentProfile" element={<StudentProfile/>} />

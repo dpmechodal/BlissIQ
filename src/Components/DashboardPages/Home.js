@@ -367,7 +367,7 @@ function Home() {
                       <div className="col-xl-8 col-md-6 col-12">
                         <div className="course-all">
                           <h4>Your courses</h4>
-                          <Link to={'#'} className="btn-view-all">View all</Link>
+                          <Link to={'/Course'} className="btn-view-all">View all</Link>
                         </div>
                         <YourCourses/>
                         <div className="course-all">
@@ -844,7 +844,7 @@ function Home() {
                   <div className="col-xl-8 col-md-6 col-12">
                     <div className="course-all">
                       <h4>Your courses</h4>
-                      <Link to={'#'} className="btn-view-all">View all</Link>
+                      <Link to={'/Course'} className="btn-view-all">View all</Link>
                     </div>
                     <YourCourses/>
                     <div className="course-all">
