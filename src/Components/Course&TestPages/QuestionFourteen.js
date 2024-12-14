@@ -2,14 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Sidebar from "../Sidebar";
-import "./Course&TestPages.css";
+import "./Course&TestPages.css"
+import CardFlipping from "./CardFlipping";
 import CustomizedProgressBars from "../StudentProfilePages/Progress";
-import speaker_icons from "../../images/Course&TestPages/speaker-icons.svg";
-import transform_text from "../../images/Course&TestPages/transform-text.svg";
-import color_mic from "../../images/Course&TestPages/color_mic.svg";
-import tameta_img from "../../images/Course&TestPages/tameta-img.svg";
+import bear from "../../images/Course&TestPages/bear.svg";
 
-function QuestionTwentyEight() {
+function QuestionFourteen() {
   return (
     <>
       <Navbar />
@@ -33,37 +31,35 @@ function QuestionTwentyEight() {
                 <CustomizedProgressBars />
                 <div className="bear-text">
                   <p>1/25</p>
+                  <div className="bear-img">
+                    <img src={bear} className="img-fluid" alt="Bear" />
+                  </div>
                 </div>
               </div>
               <div className="Question-bg">
                 <div className="question-heading">
                   <h5>Question no. 3</h5>
+                  <h3>Card Flipping Activity <span>(कार्ड फ़्लिपिंग गतिविधि)</span></h3>
                 </div>
                 <div>
-                  <div className="select-text select-text-margin">
-                    <h6>Watch the image and say the word out loud</h6>
-
-                    <div className="tameta-main">
-                      <div className="tameta_img">
-                        <img src={tameta_img} className="img-fluid" alt="" />
-                      </div>
-                    </div>
-                    <div className="twenty-Eight">
-                      <h4>Bread</h4>
+                  <div className="page">
+                    <div className="row">
+                        <div className="col-12">
+                            <CardFlipping/>
+                        </div>
+                        <div className="col-12">
+                            <div className="justify-content-center d-flex mt-3">
+                            <Link
+                                to={"/QuestionSixteen"}
+                                className="btn btn-s-email w-50"
+                            >
+                                आगे बढ़ो
+                            </Link>
+                            </div>
+                        </div>
                     </div>
                   </div>
                 </div>
-              <div className="twenty-four-img">
-                <Link to="">
-                  <img src={speaker_icons} className="img-fluid" alt="" />
-                </Link>
-                <Link to={"/QuestionTwentyNine"} className="color_mic">
-                  <img src={color_mic} className="img-fluid" alt="" />
-                </Link>
-                <Link to="">
-                  <img src={transform_text} className="img-fluid" alt="" />
-                </Link>
-              </div>
               </div>
             </div>
           </div>
@@ -73,4 +69,4 @@ function QuestionTwentyEight() {
   );
 }
 
-export default QuestionTwentyEight;
+export default QuestionFourteen;

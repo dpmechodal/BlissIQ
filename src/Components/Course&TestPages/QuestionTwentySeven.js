@@ -54,7 +54,6 @@ function QuestionTwentySeven() {
                     </div>
                   </div>
                 </div>
-              </div>
               <div className="twenty-four-img">
                 <Link to="">
                   <img src={speaker_icons} className="img-fluid" alt="" />
@@ -65,6 +64,7 @@ function QuestionTwentySeven() {
                 <Link to="">
                   <img src={transform_text} className="img-fluid" alt="" />
                 </Link>
+              </div>
               </div>
             </div>
           </div>

@@ -44,6 +44,10 @@ import QuestionTwentySix from "./Components/Course&TestPages/QuestionTwentySix";
 import QuestionTwentySeven from "./Components/Course&TestPages/QuestionTwentySeven";
 import QuestionTwentyEight from "./Components/Course&TestPages/QuestionTwentyEight";
 import QuestionTwentyNine from "./Components/Course&TestPages/QuestionTwentyNine";
+import QuestionFourteen from "./Components/Course&TestPages/QuestionFourteen";
+import QuestionFive from "./Components/Course&TestPages/QuestionFive";
+import QuestionFour from "./Components/Course&TestPages/QuestionFour";
+import QuestionSix from "./Components/Course&TestPages/QuestionSix";
 
 function App() {
   return (
@@ -94,6 +98,10 @@ function App() {
           <Route path="/QuestionTwentySeven" element={<QuestionTwentySeven />} />
           <Route path="/QuestionTwentyEight" element={<QuestionTwentyEight />} />
           <Route path="/QuestionTwentyNine" element={<QuestionTwentyNine />} />
+          <Route path="/QuestionFourteen" element={<QuestionFourteen />} />
+          <Route path="/QuestionFive" element={<QuestionFive />} />
+          <Route path="/QuestionFour" element={<QuestionFour />} />
+          <Route path="/QuestionSix" element={<QuestionSix />} />
         </Routes>
       </Router>
     </div>
