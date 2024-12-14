@@ -28,7 +28,9 @@ function TestComplete() {
 
             <div className="col-12">
               <div className="bear-bars test-complete-bars">
-                <CustomizedProgressBars />
+              <div class="progress green-prog">
+                <div class="progress-bar green-bar 100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
                 <div className="bear-text">
                   <p>1/25</p>
                   <div className="bear-img">

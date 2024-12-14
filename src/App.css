@@ -755,7 +755,17 @@ a.dropdown-item {
   font-weight: 400;
   margin-bottom: 0;
 }
-
+.progress{
+  width: 100%;
+  background-color: #C7C7C7;
+}
+.progress-bar{
+  background-color: #ffc445;
+}
+.green-prog{
+  width: 100%;
+  background-color: #0C9038;
+}
 
 /* media  */
 
