@@ -578,7 +578,7 @@ function Home() {
                                   <h4>Description</h4>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit </p>
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit </p>
-                                  <Link to={"/LiveCall"} className="btn btn-c-email mt-4 w-fit w-75 m-auto">Register for class</Link>
+                                  <Link to={"#"} className="btn btn-c-email mt-4 w-fit w-75 m-auto">Register for class</Link>
                                 </div>
                               </div>
                             </div>
